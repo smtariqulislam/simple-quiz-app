@@ -14,6 +14,6 @@
 ## create Statics file.
 ## Make it responsive.
 
-# My side:
+# My side: https://the-owner-of-the-quiz-creater-tariqul.netlify.app/
 
 
