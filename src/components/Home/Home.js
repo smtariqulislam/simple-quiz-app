@@ -16,11 +16,14 @@ const Home = () => {
                         <br /><br/> <br/>
                         <span className="text-violet-600"> Let's start game click start button.</span>
                     </h2> 
+                    <div className=" mt-5 invisible sm:visible lg:invisible flex flex-wrap justify-center">
+                        <Link to='/quiz'><button className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-green-500 text-gray-100 hover:bg-green-900'>start</button></Link>
+                    </div>
                     <div className=" invisible lg:visible flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 ">
                         <img src={pic} alt="" className="object-contain h-72 " />
                     </div>
                 </div>
-                <div className="flex flex-wrap justify-center">
+                <div className="invisible lg:visible flex flex-wrap justify-center">
                     <Link to='/quiz'><button className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-green-500 text-gray-100 hover:bg-green-900'>start</button></Link>
                 </div>
             </section>
