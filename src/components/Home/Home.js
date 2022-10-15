@@ -1,20 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+// import '/public/favio.jpg'
+const pic = new URL("/public/favio.jpg",import.meta.url);
 
 const Home = () => {
     return (
        <div>
-            <section className="dark:bg-gray-800 dark:text-gray-100">
-                <div className="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:max-w-3xl">
-                    <h1 className="text-4xl font-bold leading-none sm:text-5xl">Quisquam necessita vel
-                        <span className="dark:text-violet-400">laborum doloribus</span>delectus
-                    </h1>
-                    <p className="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
-                    <div className="flex flex-wrap justify-center">
-                        <button className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Get started</button>
-                        <button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700">Learn more</button>
+            <section>
+                <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row">
+                    <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72">
+                        <img  src={pic} alt=""  className="object-contain h-72 sm:h-80" />
+                    </div>
+
+                    <h2 className="text-4xl text-center font-bold leading-none sm:text-5xl">Quiz is a game or competition in which someone tests your knowledge by asking you questions.
+                        <br /><br/> <br/>
+                        <span className="text-violet-600"> Let's start game click start button.</span>
+                    </h2> 
+                    <div className=" invisible lg:visible flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 ">
+                        <img src={pic} alt="" className="object-contain h-72 " />
                     </div>
                 </div>
+                <div className="flex flex-wrap justify-center">
+                    <Link to='/quiz'><button className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-green-500 text-gray-100 hover:bg-green-900'>start</button></Link>
+                </div>
             </section>
+
+
+           
        </div>
     );
 };

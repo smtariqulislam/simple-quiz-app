@@ -7,11 +7,8 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 const Answer = ({ ques }) => {
     const { correctAnswer, options, question } = ques;
     const notify = () => toast(`Answer is:  ` + correctAnswer);
-
-    function han(id) {
-
+    function questionAnswers(id) {
         // console.log(correctAnswer);
-
         if (correctAnswer === options[id]) {
             // console.log(options[id]);
             toast("Right answer congratulations");
@@ -20,13 +17,12 @@ const Answer = ({ ques }) => {
             toast("sorry wrong answer");
         }
 
-
     }
 
     return (
 
         <div className="flex flex-col max-w-md gap-2 p-6 rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-            <h2 className=" items-center gap-2 text-x font-semibold leading-tight tracking-wide">Question: <span className=" items-center gap-2 text-xl font-semibold leading-tight tracking-wide  text-sky-500" dangerouslySetInnerHTML={{ __html: question }}>
+            <h2 className=" items-center gap-2 text-x font-semibold leading-tight tracking-wide">Question:  <span className=" items-center gap-2 text-xl font-semibold leading-tight tracking-wide  text-sky-500" dangerouslySetInnerHTML={{ __html: question }}>
             </span>
                 <svg viewBox="0 0 512 512" className="w-6 h-6 fill-current shrink-0 dark:text-violet-400">
                     <FontAwesomeIcon onClick={notify} icon={faEye}></FontAwesomeIcon>
@@ -38,7 +34,7 @@ const Answer = ({ ques }) => {
                 {
                     options.map((option, id) => (
                         <button
-                            onClick={() => han(id)} className={`px-8 block w-full mt-4 py-3 font-semibold rounded-full  text-pink-100`}>{id}){option}</button>
+                            onClick={() => questionAnswers(id)} className={`px-8 block w-full mt-4 py-3 font-semibold rounded-full  bg-cyan-400 text-pink-50  hover:bg-green-300`}>{id}){option}</button>
                     ))}
                 <ToastContainer />
               

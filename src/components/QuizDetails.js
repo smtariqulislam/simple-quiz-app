@@ -9,13 +9,12 @@ const QuizDetails = ({ quizDetails }) => {
 
                 <div className='bg-gray-100 p-6 rounded shadow-lg'>
                     <img
-                        className='object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80'
+                        className='object-cover w-full h-56 mb-6 rounded shadow-lg sm:h-80 md:h-64 xl:h-80'
                         src={logo}
                         alt=''
                     />
                     <p className='mb-2 text-xl font-bold leading-none sm:text-2xl'>{name}</p>
                     <p className='text-gray-700 '>Total: {total}</p>
-
                     <p
 
                     >
