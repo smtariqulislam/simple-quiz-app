@@ -157,7 +157,7 @@ const Header = () => {
                     <ul className='space-y-4'>
                       <li>
                         <NavLink
-                          toNavLink
+                          to='/home'
                           aria-label='Home'
                           title='Home'
                           className={({ isActive }) => isActive ? 'font-medium tracking-wide text-pink-900 transition-colors duration-200 hover:text-deep-purple-accent-400'
