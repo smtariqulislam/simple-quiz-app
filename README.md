@@ -1,7 +1,7 @@
 # first npx create-react-app quiz-app
 
 ## install react-dom 
-## install tailwinde css
+## install tailwind css
 ## use third party component
 ## create Blog file 
 ## create Quiz file
