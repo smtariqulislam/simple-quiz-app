@@ -1,3 +1,8 @@
+
+This is a simple quiz app. You can participate in this quiz. It can tell you if your answer is correct or incorrect, with an alert message. The quiz topics are ReactJS, JavaScript, CSS, and Git.
+
+
+How can I made this web app:
 # first npx create-react-app quiz-app
 
 ## install react-dom 
